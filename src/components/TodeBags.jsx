@@ -12,7 +12,7 @@ const AnimatableText = () => {
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', }}>
       <Animatable.Text
       
-        animation="fadeIn"
+        animation="zoomIn"
         duration={1500}
         iterationCount="infinite"
         style={{ fontSize:42 , fontWeight: 'bold', color: 'black', fontStyle:'italic', marginTop:450}}
