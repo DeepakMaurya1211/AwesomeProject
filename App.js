@@ -9,6 +9,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MyTabs from './src/components/BottomNavigator';
 
 
+
 const Stack = createStackNavigator();
 
 export default function App() {

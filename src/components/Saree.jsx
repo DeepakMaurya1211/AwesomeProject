@@ -8,6 +8,7 @@ import img6 from "../../assets/images/saree6.jpg";
 import img7 from "../../assets/images/saree7.jpg";
 import img8 from "../../assets/images/saree8.jpg";
 import Product from './Product';
+import { View } from 'react-native-animatable';
 
 const products = [
     { id: 8, name: 'Jaipuri  Saree', price: '$30', image: img8, rating: '⭐⭐⭐'  },
@@ -23,7 +24,9 @@ const products = [
 
 const Saree = () => {
     return (
+        <View style={{paddingTop:35}}>
         <Product products={products} />
-    )
+        </View>
+        )
 }
-export default Saree;
+export default Saree ;

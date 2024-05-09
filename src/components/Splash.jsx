@@ -24,9 +24,9 @@ const Splash = ({ navigation }) => {
                 animation="zoomInUp"
                 duration={3000}
                 style={{
-                    color: "pink", // Example of using the Dancing Script font
+                    color: "#CE8EFC", // Example of using the Dancing Script font
                     fontWeight: "bold", // Example of setting font weight
-                    fontSize: 24, // Example of increasing font size to 20
+                    fontSize: 28, // Example of increasing font size to 20
                 }}
             >
                 Gharana Boutique
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black',
+        backgroundColor: 'white',
     },
     imageContainer: {
         width: '60%',

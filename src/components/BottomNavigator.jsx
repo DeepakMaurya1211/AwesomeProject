@@ -21,6 +21,7 @@ export default function MyTabs() {
                 tabBarStyle: {
                     backgroundColor: 'white', paddingBottom: 4
                 },
+                headerShown:false
             }}
         >
             <Tab.Screen
@@ -30,7 +31,7 @@ export default function MyTabs() {
                     tabBarIcon: ({ color, size }) => (
                         <HomeIcon color={color} size={size} />
                     ),
-                    tabBarLabelStyle: { color: isFocused ? '#BBA0FF' : "#6C31FF" }
+                    tabBarLabelStyle: { color: isFocused ? '#129459' : "#115335" }
                 })}
             />
             <Tab.Screen
@@ -40,7 +41,7 @@ export default function MyTabs() {
                     tabBarIcon: ({ color, size }) => (
                         <SareeIcon color={color} size={size} />
                     ),
-                    tabBarLabelStyle: { color: isFocused ? '#BBA0FF' : "#6C31FF" }
+                    tabBarLabelStyle: { color: isFocused ? '#129459' : "#115335" }
                 })}
             />
             <Tab.Screen
@@ -50,7 +51,7 @@ export default function MyTabs() {
                     tabBarIcon: ({ color, size }) => (
                         <JwelleryIcon color={color} size={size} />
                     ),
-                    tabBarLabelStyle: { color: isFocused ? '#BBA0FF' : "#6C31FF" }
+                    tabBarLabelStyle: { color: isFocused ? '#129459' : "#115335" }
 
                 })}
             />
@@ -61,7 +62,7 @@ export default function MyTabs() {
                     tabBarIcon: ({ color, size }) => (
                         <TodeBagsIcon color={color} size={size} />
                     ),
-                    tabBarLabelStyle: { color: isFocused ? '#BBA0FF' : "#6C31FF" }
+                    tabBarLabelStyle: { color: isFocused ? '#129459' : "#115335" }
 
                 })}
             />
@@ -72,7 +73,7 @@ export default function MyTabs() {
                     tabBarIcon: ({ color, size }) => (
                         <KurtiIcon color={color} size={size} />
                     ),
-                    tabBarLabelStyle: { color: isFocused ? '#BBA0FF' : "#6C31FF" }
+                    tabBarLabelStyle: { color: isFocused ? '#129459' : "#115335" }
 
                 })}
             />
@@ -87,7 +88,7 @@ function HomeIcon({ color, size }) {
         <Icon
             name='home'
             type='font-awesome'
-            color={!isFocused ? '#BBA0FF' : "#6C31FF"} // Change color when focused
+            color={!isFocused ? '#129459' : "#115335"} // Change color when focused
         />
     );
 }
@@ -98,7 +99,7 @@ function SareeIcon({ color, size }) {
         <Icon
             name='home'
             type='font-awesome'
-            color={!isFocused ? '#BBA0FF' : "#6C31FF"} // Change color when focused
+            color={!isFocused ? '#129459' : "#115335"} // Change color when focused
         />
     );
 }
@@ -109,7 +110,7 @@ function JwelleryIcon({ color, size }) {
         <Icon
             name='diamond'
             type='material'
-            color={!isFocused ? '#BBA0FF' : "#6C31FF"} // Change color when focused
+            color={!isFocused ? '#129459' : "#115335"} // Change color when focused
         />
     );
 }
@@ -120,7 +121,7 @@ function TodeBagsIcon({ color, size }) {
         <Icon
             name='bag'
             type='ionicon'
-            color={!isFocused ? '#BBA0FF' : "#6C31FF"} // Change color when focused
+            color={!isFocused ? '#129459' : "#115335"} // Change color when focused
         />
     );
 }
@@ -131,7 +132,7 @@ function KurtiIcon({ color, size }) {
         <Icon
             name='shirt'
             type='ionicon'
-            color={!isFocused ? '#BBA0FF' : "#6C31FF"} // Change color when focused
+            color={!isFocused ? '#129459' : "#115335"} // Change color when focused
         />
     );
 }

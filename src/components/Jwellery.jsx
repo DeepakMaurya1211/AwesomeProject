@@ -18,6 +18,7 @@ import img16 from "../../assets/images/necklace9.jpg";
 
 import Product from './Product';
 import { ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View } from 'react-native-animatable';
 
 const products = [
     { id: 1, name: 'bangle', price: '$10', image: img1, rating: '⭐⭐⭐⭐', tag: "bangle" },
@@ -51,8 +52,8 @@ const Jewellery = () => {
         filterProducts = products.filter((product) => product.tag == selectedFilter)
     }
     return (
-        <>
-            <ScrollView horizontal style={{ padding:7 , backgroundColor: "#eae2ff", maxHeight:60, }}>
+        <View style={{flex:1, paddingTop:35}}>
+            <ScrollView horizontal style={{ padding:10 , backgroundColor: "#eae2ff", maxHeight:60, }}>
                 {filters.map((item, index) => (
                     <TouchableOpacity key={index} onPress={() => setSelectedFilter(item)} style={styles.fitlerButton}>
                         <Text style={styles.filterText}>{item}</Text>
@@ -60,7 +61,7 @@ const Jewellery = () => {
                 ))}
             </ScrollView>
             <Product products={filterProducts} />
-        </>
+        </View>
     )
 }
 const styles = StyleSheet.create({
@@ -68,8 +69,9 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 7,
         alignSelf: "center",
-        backgroundColor: "#a393e6",
+        backgroundColor: "#BBA0FF",
         marginHorizontal: 10,
+        // marginTop:1,
         borderRadius: 5,
         elevation: 6, // Android shadow effect
         shadowColor: '#796ea2', // iOS shadow effect
