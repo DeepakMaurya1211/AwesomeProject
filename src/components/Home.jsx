@@ -4,6 +4,7 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import Carousel, { Pagination } from "react-native-snap-carousel";
 import img1 from "../../assets/images/app_logo1.png";
+import img2 from "../../assets/images/bu_logo.png";
 import { ViewPropTypes } from "deprecated-react-native-prop-types";
 
 const data = [
@@ -19,10 +20,14 @@ export default function App() {
 
   const renderItem = ({ item }) => {
     return (
+      
       <View style={styles.item}>
         <Image source={item.image} style={styles.image} />
+        
         {/* <Text style={styles.title}>{item.title}</Text> */}
       </View>
+      
+    
     );
   };
   App.navigationOptions = {
@@ -43,7 +48,9 @@ export default function App() {
     >
       <View>
         <Image source={img1} style={styles.logoImage} />
-      </View>
+        
+        
+      </View >
       <Carousel
         data={data}
         renderItem={renderItem}
@@ -51,6 +58,7 @@ export default function App() {
         itemWidth={350}
         onSnapToItem={(index) => setActiveIndex(index)}
       />
+      
       <Pagination
         dotsLength={data.length}
         activeDotIndex={activeIndex}
@@ -60,8 +68,13 @@ export default function App() {
         inactiveDotOpacity={0.4}
         inactiveDotScale={0.6}
       />
-      
+      {/* <View>
+       <Image source={img2} style={styles.buLogo}  />
+        </View>
+       */}
     </View>
+    
+    
   );
 }
 
@@ -111,4 +124,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     borderRadius: 5,
   },
+  //  buLogo: {
+  //   //  width:2,
+  //   //  height:2,
+  //    marginBottom:10,
+  //  } 
 });

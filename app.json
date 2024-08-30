@@ -1,12 +1,11 @@
 {
   "expo": {
-    "name": "AwesomeProject",
-    "slug": "AwesomeProject",
+    "name": "GharanaBoutique",
+    "slug": "Gharana-Boutique",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-   
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -17,10 +16,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.deepakmaurya.GharanaBoutique"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f576203f-2358-4fd9-99de-bb14261123fc"
+      }
     }
   }
 }

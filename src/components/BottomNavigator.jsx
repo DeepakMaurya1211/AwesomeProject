@@ -3,6 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useIsFocused } from '@react-navigation/native'; // Import useIsFocused hook
 import { Icon } from 'react-native-elements';
 import { Ionicons } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 import Home from './Home';
 import Saree from './Saree';
 import Jwellery from './Jwellery';
@@ -97,8 +99,8 @@ function SareeIcon({ color, size }) {
     const isFocused = useIsFocused();
     return (
         <Icon
-            name='home'
-            type='font-awesome'
+            name='checkroom'
+            type='MaterialIcons'
             color={!isFocused ? '#129459' : "#115335"} // Change color when focused
         />
     );

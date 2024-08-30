@@ -22,21 +22,21 @@ import { View } from 'react-native-animatable';
 
 const products = [
     { id: 1, name: 'bangle', price: '$10', image: img1, rating: '⭐⭐⭐⭐', tag: "bangle" },
-    { id: 2, name: '', price: '$20', image: img2, rating: '⭐⭐⭐', tag: "necklace" },
-    { id: 3, name: '', price: '$20', image: img5, rating: '⭐⭐⭐', tag: "necklace" },
-    { id: 4, name: '', price: '$20', image: img6, rating: '⭐⭐⭐', tag: "necklace" },
-    { id: 5, name: '', price: '$20', image: img3, rating: '⭐⭐⭐', tag: "necklace" },
-    { id: 6, name: '', price: '$20', image: img4, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 2, name: 'Necklace', price: '$20', image: img2, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 3, name: 'Necklace', price: '$20', image: img5, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 4, name: 'Necklace', price: '$20', image: img6, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 5, name: 'Necklace', price: '$20', image: img3, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 6, name: 'Necklace', price: '$20', image: img4, rating: '⭐⭐⭐', tag: "necklace" },
     { id: 7, name: 'Gold plated Bangle', price: '$30', image: img7, rating: '⭐⭐⭐⭐', tag: "bangle" },
     { id: 8, name: 'Gold plated Bangle', price: '$30', image: img8, rating: '⭐⭐⭐⭐', tag: "bangle" },
     { id: 9, name: 'Gold plated Bangle', price: '$30', image: img9, rating: '⭐⭐⭐⭐', tag: "bangle" },
     { id: 10, name: 'Gold plated Bangle', price: '$30', image: img10, rating: '⭐⭐⭐⭐', tag: "bangle" },
     { id: 11, name: 'Gold plated Bangle', price: '$30', image: img11, rating: '⭐⭐⭐⭐', tag: "bangle" },
     { id: 12, name: 'Jaipuri  Saree', price: '$30', image: img12, rating: '⭐⭐⭐', tag: "ear-rings" },
-    { id: 13, name: '', price: '$20', image: img13, rating: '⭐⭐⭐', tag: "necklace" },
-    { id: 14, name: '', price: '$20', image: img14, rating: '⭐⭐⭐', tag: "necklace" },
-    { id: 15, name: '', price: '$20', image: img15, rating: '⭐⭐⭐', tag: "necklace" },
-    { id: 16, name: '', price: '$20', image: img16, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 13, name: 'Necklace', price: '$20', image: img13, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 14, name: 'Pendant', price: '$20', image: img14, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 15, name: 'Pendant', price: '$20', image: img15, rating: '⭐⭐⭐', tag: "necklace" },
+    { id: 16, name: 'Pendant', price: '$20', image: img16, rating: '⭐⭐⭐', tag: "necklace" },
 
     // Add more products as needed
 ];
@@ -53,7 +53,7 @@ const Jewellery = () => {
     }
     return (
         <View style={{flex:1, paddingTop:35}}>
-            <ScrollView horizontal style={{ padding:10 , backgroundColor: "#eae2ff", maxHeight:60, }}>
+            <ScrollView horizontal style={{ padding:10 , backgroundColor: "#fff1", maxHeight:60, }}>
                 {filters.map((item, index) => (
                     <TouchableOpacity key={index} onPress={() => setSelectedFilter(item)} style={styles.fitlerButton}>
                         <Text style={styles.filterText}>{item}</Text>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 7,
         alignSelf: "center",
-        backgroundColor: "#BBA0FF",
+        backgroundColor: "#115335",
         marginHorizontal: 10,
         // marginTop:1,
         borderRadius: 5,
@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     },
     filterText: {
         fontSize: 15,
+        color:"#ffffff"
     }
 })
 export default Jewellery;

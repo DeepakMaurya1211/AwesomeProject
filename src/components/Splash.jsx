@@ -15,7 +15,7 @@ const Splash = ({ navigation }) => {
                 <Animatable.Image
                     animation="zoomInUp"
                     duration={3000}
-                    source={require('../../assets/images/logo.png')}
+                    source={require('../../assets/images/logo1.png')}
                     resizeMode="contain"
                     style={styles.image}
                 />
@@ -24,12 +24,12 @@ const Splash = ({ navigation }) => {
                 animation="zoomInUp"
                 duration={3000}
                 style={{
-                    color: "#CE8EFC", // Example of using the Dancing Script font
+                    color: "#fff", // Example of using the Dancing Script font
                     fontWeight: "bold", // Example of setting font weight
                     fontSize: 28, // Example of increasing font size to 20
                 }}
             >
-                Gharana Boutique
+                
             </Animatable.Text>
         </View>
     );
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor: '#6E894A'
     },
     imageContainer: {
         width: '60%',

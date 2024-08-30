@@ -8,10 +8,10 @@ import Product from './Product';
 import { ScrollView } from 'react-native-gesture-handler';
 
 const products = [
-    { id: 1, name: ' Purple Saree', price: '$10', image: img1, rating: '⭐⭐⭐⭐', tag: "bangle" },
-    { id: 2, name: 'Banrasee Orange Saree', price: '$20', image: img2, rating: '⭐⭐⭐', tag: "ring"  },
-    { id: 3, name: 'Banrasee Haldi Saree', price: '$30', image: img3, rating: '⭐⭐⭐⭐', tag : "bangle"  },
-    { id: 4, name: 'Jaipuri  Saree', price: '$30', image: img4, rating: '⭐⭐⭐', tag: "payal"  },
+    { id: 1, name: 'kurti', price: '$10', image: img1, rating: '⭐⭐⭐⭐', tag: "bangle" },
+    { id: 2, name: 'Short kurti', price: '$20', image: img2, rating: '⭐⭐⭐', tag: "ring"  },
+    { id: 3, name: 'long kurti', price: '$30', image: img3, rating: '⭐⭐⭐⭐', tag : "bangle"  },
+    { id: 4, name: 'Short kurti', price: '$30', image: img4, rating: '⭐⭐⭐', tag: "payal"  },
     // Add more products as needed
 ];
 
